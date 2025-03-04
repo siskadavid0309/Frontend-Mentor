@@ -8,8 +8,8 @@ body{
 
 #box{
     background: white;
-    height: 530px;
-    width: 380px;
+    height: 55vh;
+    width: 40vh;
     margin-top: 10%;
     border-radius: 5%;
     box-shadow: 10px 10px;
@@ -77,8 +77,8 @@ font-weight: 800;
 }
 #profile{
     display: flex;
-    align-items: center; /* Középre igazítja a képet és a nevet */
-    gap: 10px; /* Kép és szöveg közötti távolság */
+    align-items: center;
+    gap: 2%;
     height: 10%;
-    width: 400px;
+    width: 100%;
 }
