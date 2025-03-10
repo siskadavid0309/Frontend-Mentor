@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 54%, 90%);
+}
+
+@media screen and (min-width: 376px){
+    #mainBox{
+        width: 740px;
+        height: auto;
+        background-color: white;
+        border-radius: 30px;
+        margin-top: 6%;
+        text-align: center;
+        margin-bottom: 6%;
+        padding-bottom: 1.8%;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    #mainBox{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+        background-color: white;
+        text-align: center;
+    }
+}
+
+img{
+    width: 87%;
+    height: auto;
+    margin-top: 6%;
+    border-radius: 10px;
+}
+
+#recipe{
+    width: 88%;
+    height: auto;
+    text-align: left;
+    margin-left: 6%;
+}
+
+h1, h2{
+    font-family: "Young Serif", serif;
+    font-style: normal;
+    margin-bottom: 0%;
+
+}
+
+h1.title{ 
+    font-weight: 400;
+    font-size: 37px;
+}
+
+h2.title{
+    color: hsl(14, 45%, 36%);
+    font-size: 25px;
+    font-weight: 400;
+}
+
+p, ol{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: hsl(30, 10%, 34%);;
+
+}
+
+#preparationTitle{
+    color: hsl(332, 51%, 32%);
+    font-weight: 700;
+    margin-left: 2%;
+    font-size: 20px;
+}
+
+section.preparation{
+    margin-top: 5%;
+    background-color: hsl(330, 100%, 98%);
+    padding-top: 1%;
+    border-radius: 10px;
+    padding-left: 3%;
+    padding-bottom: 3%;
+}
+
+ul.ingredients, ol.instructions{
+    margin-left: -3%;
+}
+
+.list{
+    margin-bottom: 0%;
+    margin-top: 2%;
+    margin-left: 3%;    
+}
+
+ol.instructions{
+    color: hsl(332, 51%, 32%);
+    font-weight: 700;
+}
+
+hr.line{
+    margin-top: 6%;
+}
+
+mark{
+    background: none;
+    font-weight: bold;
+    color: hsl(24, 5%, 18%);
+}
+
+.value{
+    color: hsl(332, 51%, 32%);
+    font-weight: 700;
+    
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr{
+    border-bottom: 1px solid hsl(30, 10%, 34%);
+}
+
+tr:last-of-type{
+    border-bottom: none;
+}
+
+td:first-of-type{
+    
+    padding-left: 5%;
+}
+
