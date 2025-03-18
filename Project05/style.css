@@ -5,9 +5,9 @@ html{
 body{
     background-color: hsl(30, 38%, 92%);
     display: flex;
-    justify-content: center;
+
     align-items: center;
-    margin: 0;
+
 }
 
 section.text:first-line{
@@ -97,12 +97,13 @@ section.text:first-line{
   #mainBody{
     margin-top: 10vw;
     background-color: hsl(0, 0%, 100%);
+    width: 600px;
     min-width: 600px;
-    max-width: 600px;
     height: auto;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
+    margin: 10% auto;
 }
 
 section.image{
