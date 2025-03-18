@@ -1,0 +1,191 @@
+html{
+    font-size: 14px;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+section.text:first-line{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin: 0;
+  font-size: 1rem;
+  color: hsl(228, 12%, 48%);
+}
+
+.title{
+      font-family: "Fraunces", serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+      font-variation-settings:
+        "SOFT" 0,
+        "WONK" 0;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-top: 8%;
+    line-height: 0.9;
+    margin-bottom: 10%;
+}
+
+.mainText{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0;
+  font-size: 1rem;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.6;
+}
+
+.purchase{
+  margin-right: 10%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+#price{
+  margin-top: 15%;
+  color: hsl(158, 36%, 37%);
+}
+
+#oldPrice{
+  margin-top: 10px;
+  text-decoration: line-through;
+  margin-left: 6%;
+}
+
+#button{
+  width: 80%;
+  height: 50px;
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  transition: 1s;
+}
+
+#button:hover{
+  background-color: hsl(158, 42%, 18%);
+}
+
+#buttonText{
+  color: white;
+  font-weight: 700;
+  margin-left: 4%;
+}
+
+@media screen and (min-width: 376px){
+  #mainBody{
+    margin-top: 10vw;
+    background-color: hsl(0, 0%, 100%);
+    min-width: 600px;
+    max-width: 600px;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+section.image{
+  height: 100%;
+  width: 50%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+}
+
+img.image{
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.content{
+  width: 50%;
+  height: 100%;
+
+}
+
+section.text{
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+}
+
+@media screen and (max-width: 375px){
+  #mainBody{
+    margin-top: 10vw;
+    background-color: hsl(0, 0%, 100%);
+    max-width: 340px;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10%;
+}
+
+section.image {
+  width: 100%;
+  max-height: 240px; /* Állítsd be a kívánt magasságot */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden; /* A kilógó részek eltüntetése */
+  display: flex;
+  justify-content: center;
+  align-items: center;/* A kép tetejét vágja le, ha szükséges */
+  margin-bottom:0;
+}
+
+img.image {
+  width: 100%; /* A teljes szélességet kitölti */
+  height: 100%; /* A szülő magasságát kitölti */
+  object-fit:cover; /* Levágja a kilógó részeket, de nem torzít */
+  margin-bottom: 0;
+}
+
+.title{
+font-size: 2.2rem;
+margin-top: 2%;
+line-height: 0.9;
+margin-bottom: 6%;
+
+}
+
+section.text{
+  margin-top: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+#price{
+  margin-top: 10%;
+}
+
+#button{
+  height: 50px;
+}
+}
