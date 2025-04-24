@@ -1,0 +1,170 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    background-color: rgba(245,245,245,255);
+}
+
+#mainBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p{
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    text-align: left;
+    align-items: center;
+    margin-top: 10%;
+}
+
+img.profilePic{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+
+.box{
+width: 270px;
+height: auto;
+border-radius: 10px;
+padding-left: 10%;
+padding-right: 10%;
+padding-bottom: 8%;
+margin-bottom: 40px;
+box-shadow: 54px 25px 50px 8px rgba(0,0,0,0.38);
+}
+
+#Box1{
+    background-color: rgba(115,63,200,255);
+}
+
+#Box2{
+    background-color: rgba(73,85,107,255);
+}
+
+#Box3{
+    background-color: white;
+}
+
+#Box3 p{
+    color: rgba(77, 84, 94, 1);
+}
+
+#Box4{
+   background-color: rgba(25,31,45,255)
+}
+
+#Box4 p{
+   color: rgba(212,215,222,255)
+}
+
+#Box5{
+    background-color: white;
+}
+
+#Box5 p{
+    color: rgba(77, 84, 94, 1);
+}
+.name, .position{
+    margin: 0;
+}
+
+
+.position, .quote{
+    font-weight: 400;
+    line-height: 1.3rem;
+    font-size: 0.85;
+}
+
+.title{
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1000px){
+    #mainBox{
+        padding-top: 8vw;
+        width: 65vw;
+        height: 30vw;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 55%);
+        gap: 2%;
+    }
+
+    .box{
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 1vw;
+        padding-left: 1.3vw;
+        padding-right: 1.3vw;
+        z-index: 0;
+    }
+    #Box1{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    #Box2{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    #Box5{
+        grid-column: 4/5;
+        grid-row: 1/3;
+    }
+
+    #Box3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #Box4{
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+
+    .position, .quote{
+        font-size: clamp(0.05rem, 0.05rem + 0.75vw, 1.1rem);
+        line-height: clamp(0.1rem, 0.1rem + 0.9vw, 1.5rem);
+    }
+
+    .title, .name{
+        font-size: clamp(0.1rem, 0.11rem + 0.85vw, 1.5rem);
+    }
+
+    .profile{
+        margin-top: 1vw;
+        gap: 1vw;
+    }
+
+    img.profilePic{
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+    .logo{
+        padding-left: 20vw;
+        padding-top: 1.5vw;
+        width: 6vw;
+        height: auto;
+        padding-bottom: 0;
+        z-index: -1;
+        position: absolute;
+    }
+}
