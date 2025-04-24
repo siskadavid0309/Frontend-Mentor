@@ -35,6 +35,11 @@ img.profilePic{
     border-radius: 50%;
     border: 2px solid #ffffff;
 }
+.logo{
+    width: 0vw;
+    position: absolute;
+    z-index: -1;
+}
 
 .box{
 width: 270px;
